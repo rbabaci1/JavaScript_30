@@ -1,0 +1,75 @@
+html {
+    font-size: 62.5%;
+    background: url(images/happy.jpg) center;
+    background-size: cover;
+  }
+  
+  body,html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .keys {
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 0.8;
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .top {
+    width: 100%;
+  }
+  .middle {
+    width: 80%;
+  }
+  .bottom {
+    width: 70%;
+  }
+  
+  .key {
+    border: .4rem solid rgb(12, 3, 53);
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    transition: all 0.07s ease;
+    width: 10rem;
+    text-align: center;
+    color: rgb(75, 227, 238);
+    background: rgba(0,0,0,0.4);
+    text-shadow: 0 0 2rem black;
+  }
+  
+  .playing {
+    transform: scale(1.1);
+    border-color: #00f7ff;
+    box-shadow: 0 0 10rem #dbf022;
+  }
+  
+  kbd {
+    display: block;
+    font-size: 4rem;
+  }
+  
+  .sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #f8bd4f;
+  }
+
+  @media (max-width: 800px) {
+    .flex {
+      flex-direction: column;
+      width: calc(100% / 3);
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
